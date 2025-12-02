@@ -3,9 +3,8 @@
 
     <div class="counter">
         <button @click="decrement" class="btn">Decrease</button>
-        <h2 :class="{'active': isActive}">{{ count }}</h2>
+        <h2 :class="{'active-heading': isActive}">{{ count }}</h2>
         <button @click="increment"  class="btn">Increase</button>
-        <!-- <button v-on:click="increment" class="btn">Increase</button> -->
     </div>
 </template>
 
@@ -20,9 +19,15 @@
         methods:{
             increment(){
                 this.count++
+                if(this.count>0){
+                    this.isActive = false
+                }
             },
             decrement(){
                 this.count--
+                if(this.count<0){
+                    this.isActive = true
+                }
             },
         }
     }
@@ -41,7 +46,7 @@
     .btn{
         color: blue;
     }
-    .active{
+    .active-heading{
         color: red;
     }
 </style>

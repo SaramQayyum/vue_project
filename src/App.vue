@@ -1,11 +1,13 @@
 <script>
 import Counter from "@/components/Counter.vue"
 import Header from "@/components/Header.vue"
+import Accordion from "@/components/Accordion.vue"
 
 export default {
   components: {
     Counter,
     Header,
+    Accordion,
   },
 }
 </script>
@@ -13,6 +15,7 @@ export default {
 <template>
   <Header />
   <Counter />
+  <Accordion /> 
 </template>
 
 
