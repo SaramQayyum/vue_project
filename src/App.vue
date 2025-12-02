@@ -2,12 +2,14 @@
 import Counter from "@/components/Counter.vue"
 import Header from "@/components/Header.vue"
 import Accordion from "@/components/Accordion.vue"
+import Sentence from "@/components/Sentence.vue"
 
 export default {
   components: {
     Counter,
     Header,
     Accordion,
+    Sentence,
   },
 }
 </script>
