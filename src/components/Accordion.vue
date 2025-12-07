@@ -9,6 +9,12 @@
             Laborum ad delectus doloremque placeat esse quae atque eius aliquid dolorum, dolore,
             voluptates reiciendis a, suscipit nulla quibusdam voluptatibus omnis voluptas. Dignissimos.
         </p>
+
+        <p class="content" :class="{'show-content': isVisible}">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Laborum ad delectus doloremque placeat esse quae atque eius aliquid dolorum, dolore,
+            voluptates reiciendis a, suscipit nulla quibusdam voluptatibus omnis voluptas. Dignissimos.
+        </p>
     </div>
 </template>
 
